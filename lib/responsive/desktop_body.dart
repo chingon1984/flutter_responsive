@@ -21,12 +21,15 @@ class DesktopBody extends StatelessWidget {
               child: Column(
                 children: [
                   // video section
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: AspectRatio(
-                      aspectRatio: 16 / 9,
-                      child: Container(
-                        color: Colors.deepPurple[400],
+                  Expanded(
+                    flex: 1,
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: AspectRatio(
+                        aspectRatio: 16 / 9,
+                        child: Container(
+                          color: Colors.deepPurple[400],
+                        ),
                       ),
                     ),
                   ),
